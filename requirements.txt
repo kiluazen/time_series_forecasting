@@ -1,0 +1,6 @@
+ipywidgets
+numpy
+pandas
+matplotlib
+pmdarima
+streamlit
