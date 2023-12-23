@@ -6,11 +6,11 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 def main():
     st.title("T-Shirt Inventory Prediction")
     # Dropdown menu for the first part of the SKU
-    first_part_options = ['CR-V22-High-Vis-Orange', 'CR-V32-High-Vis-Orange', 'CR-V22-High-Vis-Yellow', 'CR-V32-High-Vis-Yellow']  # Replace with your options
+    first_part_options = [""] +['CR-V22-High-Vis-Orange', 'CR-V22-High-Vis-Yellow', 'CR-V32-High-Vis-Orange', 'CR-V32-High-Vis-Yellow']  # Replace with your options
     selected_first_part = st.selectbox("Select the first part of the SKU", first_part_options)
 
     # Dropdown menu for sizes
-    size_options = ['XS', 'S', 'M', 'L', 'XL', '2XL', '3XL', '5XL', '7XL']  # Replace with your size options
+    size_options = [""] +[ 'XL','L','M','S','XS','2XL', '3XL', '5XL', '7XL']  # Replace with your size options
     selected_size = st.selectbox("Select the size", size_options)
 
     # Streamlit UI elements (input, buttons, etc.)
